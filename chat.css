@@ -1,0 +1,125 @@
+body {
+    width: 600px;
+    margin: auto;
+}
+
+body > h1 {
+    margin: 15px 5px;
+}
+
+section {
+    width: 78%;
+    height: 85vh;
+    margin: auto;
+}
+
+#chatUI {
+    background-color: lightblue;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#logOutBtn {
+    margin: 5px 5px;
+    border: 1px outset black;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+#messageWindow {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: 95%;
+    height: 83%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.otherMessageBox {
+    margin: 7px;
+    background-color: rgb(227, 234, 167);
+    max-width: 90%;
+    width: fit-content;
+    margin-left: 7px;
+    border: 1px solid lightgray;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.userMessageBox {
+    margin: 7px auto;
+    background-color: rgb(240, 240, 240);
+    max-width: 95%;
+    width: fit-content;
+    margin-right: 7px;
+    border: 1px solid lightgray;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.otherMessageBox p, .userMessageBox p {
+    margin: auto 7px;
+    margin-top: 5px;
+    word-wrap: break-word;
+}
+
+.otherMessageBox p b, .userMessageBox p b {
+    margin-right: 25px;
+}
+
+.otherMessageBox .otherMessage, .userMessageBox .userMessage {
+    margin: auto 7px;
+    margin-bottom: 5px;
+}
+
+#chatBox {
+    display: flex;
+    margin: 0 auto;
+    width: 95%;
+    height: 9%;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: rgb(218, 235, 232);
+}
+
+#message {
+    margin: 10px;
+    margin-right: 0;
+    width: 81%;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sendBtn {
+    margin: auto;
+    padding: 5px;
+    border: 1px outset black;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: auto;
+        max-width: 600px;
+    }
+
+    section {
+        width: 95%;
+        height: 85svh;
+        margin: auto;
+    }
+    
+    #messageWindow {
+        height: 85%;
+    }
+
+    #chatBox {
+        height: 8%;
+    }
+}
